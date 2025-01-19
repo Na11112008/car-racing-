@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Racing Game</title>
+  <style>
+    canvas {
+      border: 2px solid black;
+      display: block;
+      margin: 0 auto;
+    }
+    .controls {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .controls button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+    }
+    #speedometer {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="speedometer">Speed: 0</div>
+  <div class="controls">
+    <button id="accelerate">Accelerate</button>
+    <button id="brake">Brake</button>
+    <button id="moveLeft">Move Left</button>
+    <button id="moveRight">Move Right</button>
+    <button id="moveUp">Move Up</button>
+    <button id="moveDown">Move Down</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

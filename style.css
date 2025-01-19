@@ -1,0 +1,76 @@
+ /* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+  }
+  
+  #game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  canvas {
+    border: 1px solid black;
+    background-color: #d3d3d3;
+    width: 80%;  /* Adjust canvas to take up 80% of the screen width */
+    max-width: 800px;  /* Set maximum width for canvas */
+    height: auto;  /* Automatically adjust height based on width */
+  }
+  
+  /* Control buttons */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;  /* Make buttons take up equal width */
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+    .controls {
+      flex-direction: column;  /* Stack the buttons vertically on smaller screens */
+      width: 70%;
+    }
+  
+    button {
+      margin: 10px;
+      font-size: 14px;
+    }
+  
+    canvas {
+      width: 90%;  /* Make the canvas width more flexible */
+      max-width: 500px;  /* Limit max width for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    canvas {
+      width: 95%;
+      max-width: 400px;
+    }
+  
+    button {
+      font-size: 12px;  /* Make button text smaller on very small screens */
+    }
+  }
+  
